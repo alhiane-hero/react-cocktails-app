@@ -1,0 +1,49 @@
+.cocktail-section {
+    @include flexBox(center, center);
+    .cocktail-center {
+        width: 90vw;
+        .btn-primary {
+            display: block;
+            width: fit-content;
+            padding: 0.5rem 1rem;
+            background-color: $mainColor;
+            color: $whiteColor;
+            border-radius: $radius;
+            margin: 0 auto;
+            text-transform: uppercase;
+        }
+        .cocktail-title {
+            margin: 1rem 0 3rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            color: $blackColor;
+        }
+        .drink {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            grid-gap: 2rem;
+            img {
+                border-radius: $radius;
+            }
+            .drink-info {
+                p {
+                    margin-bottom: 1rem;
+                    color: $blackColor;
+                    line-height: 1.7;
+                    span {
+                        margin-right: 0.5rem;
+                    }
+                    span:first-of-type {
+                        display: inline-block;
+                        padding: 0.25rem 0.5rem;
+                        background-color: #d4e6a5;
+                        color: $mainColor;
+                        border-radius: $radius;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

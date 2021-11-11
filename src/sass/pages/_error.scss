@@ -1,0 +1,22 @@
+.error-page {
+    @include flexBox(center, center);
+    .error-container {
+        width: 65vw;
+        h1 {
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 2rem;
+            color: $blackColor;
+        }
+        a {
+            display: block;
+            width: fit-content;
+            margin: 2rem auto;
+            padding: 0.5rem 1rem;
+            background-color: $mainColor;
+            color: $whiteColor;
+            text-transform: uppercase;
+            border-radius: $radius;
+        }
+    }
+}

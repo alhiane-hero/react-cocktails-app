@@ -1,0 +1,17 @@
+.about-section {
+    @include flexBox(center, center);
+    .about-center {
+        width: 65vw;
+        .about-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            color: $blackColor;
+            margin-bottom: 2rem;
+        }
+        .about-desc {
+            line-height: 1.7;
+            color: #555;
+        }
+    }
+}

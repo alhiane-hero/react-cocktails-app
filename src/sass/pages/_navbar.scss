@@ -1,0 +1,23 @@
+nav {
+    position: relative;
+    height: 5rem;
+    box-shadow: $lightShadow;
+    background-color: $whiteColor;
+    @include flexBox(center, center);
+    .nav-center {
+        width: 90vw;
+        @include flexBox(space-between, center);
+        .logo {
+            width: 12rem;
+        }
+        .nav-links {
+            @include flexBox(flex-start, center);
+            li a {
+                display: block;
+                padding: 0.5rem;
+                font-size: 1.2rem;
+                color: $blackColor;
+            }
+        }
+    }
+}

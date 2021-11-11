@@ -1,0 +1,25 @@
+.cocktail {
+    overflow: hidden;
+    border-radius: $radius;
+    background-color: $whiteColor;
+    footer {
+        padding: 1.5rem;
+        color: $blackColor;
+        .cocktail-name {
+            font-size: 2rem;
+        }
+        .cocktail-glass {
+            margin: 0.7rem 0;
+        }
+        .cocktail-info {
+            margin-bottom: 1.3rem;
+            font-weight: 400;
+        }
+        .btn {
+            padding: 0.5rem 1rem;
+            background-color: $mainColor;
+            border-radius: $radius;
+            color: $whiteColor;
+        }
+    }
+}

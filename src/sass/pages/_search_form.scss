@@ -1,0 +1,32 @@
+.search-section {
+    position: relative;
+    @include flexBox(center, center);
+    .search-form {
+        width: 65vw;
+        padding: 2rem 2.5rem;
+        background-color: $whiteColor;
+        border-radius: $radius;
+        box-shadow: $lightShadow;
+        .form-control {
+            label {
+                display: block;
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: $mainColor;
+                margin-bottom: 1.25rem;
+            }
+            input {
+                width: 100%;
+                padding: 0.5rem;
+                border: none;
+                border-radius: $radius;
+                background-color: $secondaryColor;
+                font-size: 1.2rem;
+                color: $blackColor;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

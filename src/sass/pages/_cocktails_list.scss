@@ -1,0 +1,16 @@
+.cocktails-list {
+    @include flexBox(center, center);
+    flex-direction: column;
+    .section-title {
+        text-align: center;
+        font-size: 2rem;
+        color: $blackColor;
+        margin-bottom: 3rem;
+    }
+    .cocktails-center {
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(338px, 1fr));
+        grid-gap: 2rem;
+    }
+}
